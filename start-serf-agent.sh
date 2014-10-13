@@ -21,4 +21,4 @@ cat > $SERF_CONFIG_DIR/node.json <<EOF
 }
 EOF
 
-/bin/serf agent -config-dir $SERF_CONFIG_DIR
+/bin/serf agent -config-dir $SERF_CONFIG_DIR -tag dept=im -snapshot=/home/work/opdir/serf.snapshot > /dev/null 2>&1
