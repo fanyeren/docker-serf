@@ -45,5 +45,6 @@ RUN sed -i 's/UsePAM yes/UsePAM no/' /etc/ssh/sshd_config
 
 EXPOSE 7373 7946 22
 
+RUN apt-get clean
 #CMD /etc/serf/start-serf-agent.sh
 CMD /bin/bash

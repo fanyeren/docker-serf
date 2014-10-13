@@ -1,7 +1,7 @@
 #!/bin/bash
 
-: ${MYDOMAIN:=mycorp.kom}
-: ${IMAGE:=alvinhenrick/serf}
+: ${MYDOMAIN:=xhaoufeng.com}
+: ${IMAGE:=xiahoufeng/serf}
 : ${DOCKER_OPTS:="--dns 127.0.0.1 -p 7373 -p 7946"}
 : ${DEBUG:=1}
 
