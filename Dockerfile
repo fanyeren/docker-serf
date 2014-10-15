@@ -17,6 +17,14 @@ ADD apt.conf /etc/apt/apt.conf
 ADD proxy /etc/profile.d/proxy
 ADD 0.6.3_linux_amd64.zip /tmp/serf.zip
 
+ENV DEBIAN_FRONTEND noninteractive
+
+# === Locale ===
+RUN locale-gen  en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
+ENV LC_ALL en_US.UTF-8
+
 RUN apt-get update
 RUN apt-get install -y dnsmasq unzip curl libterm-readline-gnu-perl vim-nox openssh-server
 
